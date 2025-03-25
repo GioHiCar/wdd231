@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: raleway;
 }
 header {
     background-color: rgb(155, 187, 155);
@@ -9,17 +10,28 @@ header {
     justify-content: center;
     align-items: center;
 }
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    flex: 1 1 100%;
+}
 header span {
     font-size: 30px;
     margin: 2rem;
 }
 nav {
-    display: flex;
-    justify-content: space-around;
     background-color: black;
-    padding: 1rem;
 }
-nav a{
+#hamburger::before {
+    content: "≡";
+}
+#hamburger {
+    color: black;
+    font-size: xx-large;
+}
+a{
     text-decoration: none;
     color: white;
 }
